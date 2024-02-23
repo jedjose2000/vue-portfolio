@@ -4,7 +4,7 @@
   })
 </script>
 <template>
-  <div class="mx-auto w-full max-w-[26rem] rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg  group ease-in duration-300 group-hover:scale-105" >
+  <div class="mx-auto w-full max-w-[26rem] rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg  group ease-in duration-300 group-hover:scale-105 dark:bg-dark-secondary" >
     <div class="mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40  ease-in duration-700 group-hover:scale-105">
       <img class="mx-auto lg:h-56 object-cover max-h-48 object-center  ease-in duration-700 group-hover:scale-75"
            :src="project.image"

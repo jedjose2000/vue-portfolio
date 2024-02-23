@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors")
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -17,6 +18,9 @@ export default {
       },
     },
     extend:{
+      screens:{
+        'xtrasm': '300px'
+      },
       colors:{
         "light-primary": "#92C7CF",
         "light-secondary": "#AAD7D9",

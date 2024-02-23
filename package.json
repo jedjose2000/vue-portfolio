@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@edenchazard/vue-dark-mode-toggle": "^1.0.4",
     "@oku-ui/motion": "^0.3.4",
+    "@vueuse/core": "^10.8.0",
     "@vueuse/motion": "^2.1.0",
     "axios": "^1.6.7",
     "vue": "^3.4.15",

@@ -20,23 +20,25 @@ onMounted(()=>{
         :transition="{ delay: 1 }"
     >
       <div class="flex flex-col xl:flex-row gap-24">
-        <img src="@/assets/img/home-computer.jpg" alt="About Image" class="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl">
-        <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+        <img src="@/assets/img/myprofile.jpg" alt="About Image" class="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl">
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left" >
           <div class="flex flex-col">
             <h2 class="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3">
               About Me
             </h2>
             <p class="mb-4 text-accent">
-              Freelance Developer
+              Backend Developer
             </p>
             <hr class="mb-8 opacity-90 dark:opacity-5" />
-            <p class="mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsa mollitia necessitatibus neque quibusdam. Aliquid asperiores beatae deleniti, dicta dignissimos dolor dolore facere laboriosam magni modi nobis praesentium quod sunt.</br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid dolorum earum error excepturi facere illo impedit iste laborum, molestiae mollitia officia officiis quis repellat tempora veniam voluptates, voluptatum. Dolor!
+            <p class="mb-8 indent-10">
+              As an aspiring web developer, I am passionate about building engaging, user-friendly websites that not only look great but also function seamlessly.
+            </p>
+            <p class="mb-8 indent-10">
+              I am continuously improving my front-end and back-end development skills in order to develop innovative technological solutions.
             </p>
           </div>
-          <a href="#contact" class="btn btn-md bg-accent text-light-tail-100">
-            Work with me
+          <a href="@/assets/resume/Jed%20Lester%20P.%20Jose%20(RESUME).pdf" download class="btn btn-md bg-accent text-light-tail-100">
+            Resume
           </a>
         </div>
       </div>

@@ -37,7 +37,7 @@
 </script>
 <template>
   <section id="contact" class="section bg-light-secondary dark:bg-dark-secondary">
-    <div class="container mx-auto" v-motion:initial="{ opacity: 0, y: 100 }" :visible="{ opacity: 1, y: 0 }">
+    <div class="container mx-auto" v-motion-pop-visible>
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title">
           Contact Me
@@ -70,13 +70,13 @@
           </div>
           <div class="flex gap-8">
             <div>
-              <input type="text" class="input" name="name" placeholder="Your Name" v-model="form.name"/>
+              <input type="text" class="input" name="name" placeholder="Your Name" v-model="form.name" autocomplete="off"/>
               <template v-if="errors.name">
                 <span v-text="errors.name[0]"  class="text-sm text-red-400"></span>
               </template>
             </div>
             <div>
-              <input type="email" class="input" name="email" placeholder="Your Email" v-model="form.email"/>
+              <input type="email" class="input" name="email" placeholder="Your Email" v-model="form.email" autocomplete="off"/>
               <template v-if="errors.email">
                 <span v-text="errors.email[0]" class="text-sm text-red-400"></span>
               </template>
@@ -88,7 +88,7 @@
             <span v-text="errors.email[0]" class="text-sm text-red-400"></span>
           </template>
 
-          <button type="submit" class="btn btn-lg bg-accent hover:bg-blue-500 dark:bg-dark-secondary text-black dark:text-white">
+          <button type="submit" class="btn btn-lg bg-accent hover:bg-blue-500 dark:bg-blue-950 rounded-2xl text-black dark:text-white">
             Send Message
           </button>
         </form>
