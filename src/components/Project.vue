@@ -1,8 +1,16 @@
 <script setup>
+  import "./Project.vue";
+  import "@/components/Project.vue";
+  import {onMounted, watch} from "vue";
+  import usePortfolio from "@/composables/portfolio.js";
+
   defineProps({
     project:Object,
+
   })
+
 </script>
+
 <template>
   <div class="mx-auto w-full max-w-[26rem] rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg  group ease-in duration-300 group-hover:scale-105 dark:bg-dark-secondary" >
     <div class="mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40  ease-in duration-700 group-hover:scale-105">
@@ -11,7 +19,7 @@
            alt="ui/ux review check"
       />
       <div class="border-solid border-2 border-sky-400 rounded-xl bg-dark-primary ">
-        <p class="text-white p-1 ml-2 group-hover:text-blue-400">{{ project.skill.name }}</p>
+        <p class="text-white p-1 ml-2 group-hover:text-blue-400">{{project.name}}</p>
       </div>
     </div>
     <div class="p-6">
@@ -25,12 +33,15 @@
           {{project.projectDescription}}
         </p>
       </div>
+
       <div class="group mt-8 inline-flex flex-wrap items-center gap-3">
-        <img :src="project.image" alt="Skill Image" class="h-10">
+          <img  v-for="projectImages in project.projectImages"  :src="projectImages" :key="projectImages.id" alt="Skill Image" class="h-10">
       </div>
+
+
     </div>
     <div class="p-6 pt-3">
-      <a href="https://github.com/jedjose2000" target="_blank">
+      <a  :href="project.gitHubUrl" target="_blank">
         <button
             class="block w-full select-none rounded-lg bg-blue-500 py-3.5 px-7 my-5 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:blue-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
@@ -39,7 +50,7 @@
           Github
         </button>
       </a>
-      <a href="">
+      <a :href="project.link" target="_blank" v-if="project.link != null">
         <button
             class="block w-full select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"

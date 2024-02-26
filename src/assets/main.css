@@ -42,3 +42,5 @@
         @apply bg-light-secondary dark:bg-dark-secondary resize-none w-full outline outline-1 outline-accent p-6 rounded-lg h-[200px] focus:outline focus:outline-1 focus:outline-accent;
     }
 }
+
+

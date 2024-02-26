@@ -19,7 +19,8 @@ export default {
     },
     extend:{
       screens:{
-        'xtrasm': '300px'
+        'xtrasm': '300px',
+        '2sm': '400px'
       },
       colors:{
         "light-primary": "#92C7CF",

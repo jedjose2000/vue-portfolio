@@ -26,7 +26,7 @@
 <template>
   <!-- ====== Navbar Section Start -->
   <header>
-    <nav :class="[scrollBg ? 'bg-light-primary dark:bg-dark-primary' : 'bg-white dark:bg-gray-900']" class="w-full fixed z-20 border-gray-200 dark:bg-gray-900 px-2" >
+    <nav :class="[scrollBg ? 'bg-light-primary dark:bg-dark-primary' : 'bg-white dark:bg-gray-900']" class="w-full fixed z-20 border-gray-200 dark:bg-gray-900 px-2 " >
       <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="https://github.com/jedjose2000" class="flex items-center space-x-3 rtl:space-x-reverse">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JL</span>
@@ -46,7 +46,7 @@
               </li>
             </template>
             <label class="switch">
-              <input class="switch__input cursor-pointer" type="checkbox" role="switch" v-model="isDark">
+              <input class="switch__input cursor-pointer" type="checkbox" role="switch" v-model="isDark" id="rerun">
               <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
                 <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round">
                   <circle cx="6" cy="6" r="2" />

@@ -1,34 +1,27 @@
 <script setup>
-  import usePortfolio from "@/composables/portfolio.js";
-  import {onMounted, ref} from "vue";
-  import {Motion} from "@oku-ui/motion";
-  import {observeSection} from "@/motions/motion.js";
+import usePortfolio from "@/composables/portfolio.js";
+import {onMounted, ref} from "vue";
+import { Marquee } from "@mjakupi/vue-marquee";
+import '@mjakupi/vue-marquee/dist/style.css'
+const {getSkills, skills} = usePortfolio();
+const isRtl = ref(false);
+onMounted(getSkills);
 
-  const motionVisibleSkills = ref(false);
-
-  const {getSkills, skills} = usePortfolio();
-  onMounted(getSkills);
-  // onMounted(()=>{
-  //   observeSection('portfolio',motionVisibleSkills);
-  // })
 </script>
 <template>
-  <section class="bg-light-tail-100 dark:bg-dark-tail-100 py-24">
-<!--    <Motion-->
-<!--        class="container mx-auto"-->
-<!--        :initial="{ opacity: 0, scale: 1 }"-->
-<!--        :animate="{ opacity: 1, scale: 1 }"-->
-<!--        :transition="{ delay: 1 }"-->
-<!--    >-->
-      <div class="container mx-auto"  >
-        <div class="grid grid-cols-8 md:grid-flow-col">
-          <template v-for="skill in skills" :key="skill.id" v-if="skills != null">
-            <div class="flex items-center justify-center ml-5">
-                <img :src="skill.image" :alt="skill.name" class="lg:h-20 sm:h-15" v-motion-roll-visible-bottom>
-            </div>
+    <section class="bg-light-tail-100 dark:bg-dark-tail-100 py-20  marquee-container">
+      <div class="container mx-auto">
+        <Marquee
+            :items="skills"
+            :outset="0"
+            :rtlOutset="-1"
+            :speed="50"
+            direction="horizontal"
+            :rtl="isRtl" >
+          <template v-slot="{ item }">
+            <img :src="item.image" :alt="item.name" class="lg:h-20 md:h-20 sm:h-12 2sm:h-12 xtrasm:h-10">
           </template>
-        </div>
+        </Marquee>
       </div>
-<!--    </Motion>-->
-  </section>
+    </section>
 </template>

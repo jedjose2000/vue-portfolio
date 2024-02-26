@@ -5,15 +5,8 @@ import {Motion} from "@oku-ui/motion";
 </script>
 
 <template>
-  <div id="home" class="section  flex items-center bg-light-primary dark:bg-dark-primary lg:h-[100vh]  md:h-[100vh]  sm:h-[100vh] xl:h-[100vh] xtrasm:h-[100vh] overflow-hidden">
+  <div id="home" class="section  flex items-center bg-light-primary lg:h-[100vh]  md:h-[100vh]  sm:h-[100vh] xl:h-[100vh] xtrasm:h-[100vh] overflow-hidden">
     <section id="home">
-<!--      <Motion-->
-<!--          class="container mx-auto h-full"-->
-<!--          :initial="{ opacity: 0, scale: 1 }"-->
-<!--          :animate="{ opacity: 1, scale: 1 }"-->
-<!--          :transition="{ delay: 1.2 }"-->
-<!--          :onceVisible="true"-->
-<!--      >-->
         <div     v-motion
                  :initial="{ opacity: 0, y: 100 }"
                  :enter="{ opacity: 1, y: 0, scale: 1 }"
@@ -23,25 +16,24 @@ import {Motion} from "@oku-ui/motion";
           <div class="flex-1 flex flex-col items-center lg:items-start cursor-pointer">
             <p class="text-3xl  text-white font-bold text-md mb-[22px]">Hello, I am Jed Lester Jose</p>
             <h1 class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
-              Aspiring Web Developer
+              Web Developer
             </h1>
           </div>
         </div>
         </div>
-<!--      </Motion>-->
     </section>
   </div>
 </template>
 
 
 <script>
-
-  window.onload = function () {
-    VANTA.WAVES({
+  document.addEventListener("DOMContentLoaded", function() {
+    var wavesEffect = VANTA.WAVES({
       el: "#home",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-    })
-  }
+    });
+
+  });
 </script>
