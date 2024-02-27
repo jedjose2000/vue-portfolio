@@ -1,5 +1,5 @@
 <script setup>
-  import {ref} from 'vue';
+import {onMounted, ref} from 'vue';
   import axios from "axios";
 
   const errors = ref({});
@@ -25,15 +25,22 @@
   }
 
   const submitForm = async (event) => {
+    console.log('submitform');
     try{
+      console.log('trying to post');
       await axios.post('/contact', form.value);
       cleanForm();
     }catch (error){
+      console.log('fails');
       if(error.response.status === 422){
         errors.value = error.response.data.errors;
       }
     }
   }
+
+  onMounted(()=>{
+    console.log('mounted');
+  })
 </script>
 <template>
   <section id="contact" class="section bg-light-secondary dark:bg-dark-secondary">
