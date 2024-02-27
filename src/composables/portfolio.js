@@ -8,7 +8,7 @@ export default function usePortfolio(){
     const filteredProjects = ref([]);
     const selectedTab = ref('all');
     const getSkills = async () => {
-        const response = await axios.get('http://laravel-app-env.eba-ikq93um4.ap-southeast-2.elasticbeanstalk.com/api/skills ');
+        const response = await axios.get('skills');
         skills.value = response.data.data;
     };
 
