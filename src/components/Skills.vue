@@ -9,7 +9,7 @@ onMounted(getSkills);
 
 </script>
 <template>
-    <section class="bg-light-tail-100 dark:bg-dark-tail-100 py-20  marquee-container">
+    <section class="bg-light-tail-100 dark:bg-dark-tail-100 py-20  marquee-container overflow-hidden">
       <div class="container mx-auto">
         <Marquee
             :items="skills"
