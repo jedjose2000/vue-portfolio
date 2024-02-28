@@ -24,35 +24,25 @@
     setTimeout(()=>errors.value = {}, 3000)
   }
 
-  const submitForm = async (event) => {
-    console.log('submitform');
+  const submitForm = async (event) => {;
     try{
-      console.log('trying to post');
       await axios.post('contact', form.value);
       cleanForm();
     }catch (error){
-      console.log('fails');
       if(error.response.status === 422){
         errors.value = error.response.data.errors;
       }
     }
     cleanErrors();
   }
-
-  onMounted(()=>{
-    console.log('mounted');
-  })
 </script>
 <template>
   <section id="contact" class="section bg-light-secondary dark:bg-dark-secondary">
     <div class="container mx-auto" v-motion-pop-visible>
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">
+        <h2 class="section-title mb-32">
           Contact Me
         </h2>
-        <p class="subtitle">
-          Have a question? Just kindly send me a message and I'll do my best to get back at you.
-        </p>
       </div>
       <div class="flex flex-col md:flex-row md:gap-x-8">
         <div class="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
@@ -78,19 +68,19 @@
           </div>
           <div class="flex gap-8">
             <div>
-              <input type="text" class="input" name="name" placeholder="Your Name" v-model="form.name" autocomplete="off"/>
+              <input type="text" class="input text-black dark:text-white" name="name" placeholder="Your Name" v-model="form.name" autocomplete="off"/>
               <template v-if="errors.name">
                 <span v-text="errors.name[0]"  class="text-sm text-red-400"></span>
               </template>
             </div>
             <div>
-              <input type="email" class="input" name="email" placeholder="Your Email" v-model="form.email" autocomplete="off"/>
+              <input type="email" class="input text-black dark:text-white" name="email" placeholder="Your Email" v-model="form.email" autocomplete="off"/>
               <template v-if="errors.email">
                 <span v-text="errors.email[0]" class="text-sm text-red-400"></span>
               </template>
             </div>
           </div>
-          <textarea class="textarea" placeholder="Your message" spellcheck="false" name="body" v-model="form.body">
+          <textarea class="textarea text-black dark:text-white" placeholder="Your message" spellcheck="false" name="body" v-model="form.body">
                 </textarea>
           <template v-if="errors.body">
             <span v-text="errors.email[0]" class="text-sm text-red-400"></span>

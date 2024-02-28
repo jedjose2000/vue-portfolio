@@ -34,7 +34,8 @@
         </p>
       </div>
 
-      <div class="group mt-8 inline-flex flex-wrap items-center gap-3">
+      <p>Tags</p>
+      <div class="group mt-2 inline-flex flex-wrap items-center gap-3">
           <img  v-for="projectImages in project.projectImages"  :src="projectImages" :key="projectImages.id" alt="Skill Image" class="h-10">
       </div>
 

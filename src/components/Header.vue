@@ -28,7 +28,7 @@
   <header>
     <nav :class="[scrollBg ? 'bg-light-primary dark:bg-dark-primary' : 'bg-white dark:bg-gray-900']" class="w-full fixed z-20 border-gray-200 dark:bg-gray-900 px-2 " >
       <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-3">
-        <a href="https://github.com/jedjose2000" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="https://jedlester-jose-portfolio.netlify.app/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JL</span>
           <h4>.dev</h4>
         </a>

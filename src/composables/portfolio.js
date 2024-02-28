@@ -7,10 +7,16 @@ export default function usePortfolio(){
     const projects = ref([]);
     const filteredProjects = ref([]);
     const selectedTab = ref('all');
+    const latestDescription = ref();
     const getSkills = async () => {
         const response = await axios.get('skills');
         skills.value = response.data.data;
     };
+
+    const getLatestDescription = async() =>{
+        const response = await axios.get('getLatest');
+        latestDescription.value = response.data.data.projectDescription;
+    }
 
     const getProjects = async () => {
         const response = await axios.get('allProjects');
@@ -56,5 +62,7 @@ export default function usePortfolio(){
         selectedTab,
         filteredProjects,
         filterProjects,
+        getLatestDescription,
+        latestDescription
     }
 };

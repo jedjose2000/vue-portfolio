@@ -1,5 +1,11 @@
 <script setup>
   import Projects from "@/components/Projects.vue";
+  import usePortfolio from "@/composables/portfolio.js";
+  import {onMounted} from "vue";
+  const {getLatestDescription, latestDescription} = usePortfolio();
+  onMounted(async()=>{
+    await getLatestDescription();
+  })
 </script>
 
 <template>
@@ -7,10 +13,10 @@
     <div class="container mx-auto">
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title">
-          My Latest Work
+          My Latest Project
         </h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur beatae, dolore earum error, fugit harum illum laborum magni nesciunt qui quo reprehenderit temporibus velit voluptatum. Aperiam labore nulla soluta.
+        <p class="subtitle text-black dark:text-inherit">
+          {{latestDescription}}
         </p>
       </div>
     </div>

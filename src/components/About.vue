@@ -29,12 +29,13 @@ onMounted(()=>{
             <p class="mb-4 text-accent">
               Backend Developer
             </p>
-            <hr class="mb-8 opacity-90 dark:opacity-5" />
-            <p class="mb-8 indent-10">
-              As an aspiring web developer, I am passionate about building engaging, user-friendly websites that not only look great but also function seamlessly.
+            <hr class="mb-8 opacity-90 dark:opacity-5"/>
+            <p class="mb-8 indent-10 text-justify text-black dark:text-inherit">
+              As an aspiring web developer, I am passionate about building engaging, user-friendly websites that not only looks great but also function seamlessly. I am continuously improving my front-end and back-end development skills in order to develop innovative technological solutions.
+              My hobbies are playing video games and learning programming languages and tools.
             </p>
-            <p class="mb-8 indent-10">
-              I am continuously improving my front-end and back-end development skills in order to develop innovative technological solutions.
+            <p class="mb-8 indent-10 text-justify text-black dark:text-inherit">
+              My goal is to build a rewarding career in web development where I can apply my skills, creativity, and dedication to producing outstanding online experiences. I am looking forward to connecting with other industry experts in the field.
             </p>
           </div>
           <div class="pt-4">
