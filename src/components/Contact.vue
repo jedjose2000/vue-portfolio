@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, ref} from 'vue';
+  import {onMounted, ref} from 'vue';
   import axios from "axios";
 
   const errors = ref({});
@@ -28,7 +28,7 @@ import {onMounted, ref} from 'vue';
     console.log('submitform');
     try{
       console.log('trying to post');
-      await axios.post('https://my-portfolio-2024.online/api/contact', form.value);
+      await axios.post('http://laravel-app-env.eba-ikq93um4.ap-southeast-2.elasticbeanstalk.com/api/contact', form.value);
       cleanForm();
     }catch (error){
       console.log('fails');
