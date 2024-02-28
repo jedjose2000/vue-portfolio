@@ -28,7 +28,7 @@
     console.log('submitform');
     try{
       console.log('trying to post');
-      await axios.post('http://laravel-app-env.eba-ikq93um4.ap-southeast-2.elasticbeanstalk.com/api/contact', form.value);
+      await axios.post('contact', form.value);
       cleanForm();
     }catch (error){
       console.log('fails');
