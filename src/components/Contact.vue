@@ -28,7 +28,7 @@ import {onMounted, ref} from 'vue';
     console.log('submitform');
     try{
       console.log('trying to post');
-      await axios.post('/contact', form.value);
+      await axios.post('contact', form.value);
       cleanForm();
     }catch (error){
       console.log('fails');
