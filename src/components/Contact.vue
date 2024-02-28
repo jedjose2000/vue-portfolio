@@ -28,7 +28,7 @@ import {onMounted, ref} from 'vue';
     console.log('submitform');
     try{
       console.log('trying to post');
-      await axios.post('contact', form.value);
+      await axios.post('https://my-portfolio-2024.online/api/contact', form.value);
       cleanForm();
     }catch (error){
       console.log('fails');
@@ -36,6 +36,7 @@ import {onMounted, ref} from 'vue';
         errors.value = error.response.data.errors;
       }
     }
+    cleanErrors();
   }
 
   onMounted(()=>{
