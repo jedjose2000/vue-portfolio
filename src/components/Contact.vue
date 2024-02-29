@@ -41,7 +41,7 @@
     <div class="container mx-auto" v-motion-pop-visible>
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title mb-32">
-          Contact Me
+          Get in Touch
         </h2>
       </div>
       <div class="flex flex-col md:flex-row md:gap-x-8">
