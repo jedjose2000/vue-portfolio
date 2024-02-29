@@ -57,7 +57,7 @@
                 Have a question? Just kindly send me a message and I'll do my best to get back at you.
               </h4>
               <p class="text-accent font-normal">
-                You can email me at jedjose2000@gmail.com
+                You can email me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jedjose2000@gmail.com" class="underline">jedjose2000@gmail.com</a>
               </p>
             </div>
           </div>

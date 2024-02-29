@@ -19,7 +19,7 @@ onMounted(getSkills);
             direction="horizontal"
             :rtl="isRtl" >
           <template v-slot="{ item }">
-            <img :src="item.image" :alt="item.name" class="lg:h-20 md:h-20 sm:h-12 2sm:h-12 xtrasm:h-10">
+            <img :src="item.image" :alt="item.name" class="lg:h-20 md:h-20 sm:h-12 2sm:h-12 xtrasm:h-10" v-motion-roll-visible-bottom >
           </template>
         </Marquee>
       </div>
