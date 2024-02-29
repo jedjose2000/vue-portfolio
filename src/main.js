@@ -11,6 +11,5 @@ app.use(MotionPlugin);
 // Register the VueMarqueeSlider globally
 app.component('VueMarqueeSlider', VueMarqueeSlider);
 
-
 // Mount the app to the DOM
 app.mount('#app');

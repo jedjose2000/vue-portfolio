@@ -1,11 +1,8 @@
 <script setup>
   import usePortfolio from "@/composables/portfolio.js";
-  import {onMounted, ref} from "vue";
-  import Skills from "@/components/Skills.vue";
+  import {onMounted,} from "vue";
   import Project from "@/components/Project.vue";
-  const {getSkills, skills, getProjects, projects, selectedTab, filterProjects, filteredProjects} = usePortfolio();
-  // onMounted(getSkills);
-  // onMounted(getProjects);
+  const {getSkills, skills, getProjects, selectedTab, filterProjects, filteredProjects} = usePortfolio();
 
   onMounted(async () => {
     await getSkills()

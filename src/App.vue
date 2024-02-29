@@ -11,13 +11,19 @@ import Contact from "@/components/Contact.vue";
 
 <template>
   <Header/>
-
+<!-- Main -->
   <main class="min-h-screen">
+    <!-- Hero Section -->
     <Hero />
+    <!-- Promote Section -->
     <Promote/>
+    <!-- About Section -->
     <About/>
+    <!-- Skills Section -->
     <Skills/>
+    <!-- Portfolio Section -->
     <Portfolio/>
+    <!-- Contact Section -->
     <Contact/>
   </main>
 <!--  Footer -->

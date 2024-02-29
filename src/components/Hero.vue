@@ -1,8 +1,3 @@
-<script setup>
-import {Motion} from "@oku-ui/motion";
-
-
-</script>
 
 <template>
   <div id="home" class="section  flex items-center bg-light-primary lg:h-[100vh]  md:h-[100vh]  sm:h-[100vh] xl:h-[100vh] xtrasm:h-[100vh] overflow-hidden">
