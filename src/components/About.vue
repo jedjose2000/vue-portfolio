@@ -67,11 +67,10 @@ onMounted(()=>{
 
             </div>
             <div class="flex justify-end md:ml-auto lg:ml-auto">
-              <a href="@/assets/resume/Jed%20Lester%20Jose%20Resume.pdf" download="Jed Lester Jose Resume.pdf" class="btn btn-md bg-accent text-light-tail-100 hover:bg-blue-500">
+              <a href="https://jedlester-jose-portfolio.netlify.app/Jed%20Lester%20Jose%20Resume.pdf" download="Jed Lester Jose Resume.pdf" class="btn btn-md bg-accent text-light-tail-100 hover:bg-blue-500">
                 Download my Resume
               </a>
             </div>
-
           </div>
         </div>
       </div>
