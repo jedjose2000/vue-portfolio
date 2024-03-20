@@ -2,10 +2,10 @@
   import Projects from "@/components/Projects.vue";
   import usePortfolio from "@/composables/portfolio.js";
   import {onMounted} from "vue";
-  const {getLatestDescription, latestDescription} = usePortfolio();
-  onMounted(async()=>{
-    await getLatestDescription();
-  })
+  // const {getLatestDescription, latestDescription} = usePortfolio();
+  // onMounted(async()=>{
+  //   await getLatestDescription();
+  // })
 </script>
 
 <template>
@@ -13,11 +13,11 @@
     <div class="container mx-auto">
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title">
-          My Latest Project
+          My Projects
         </h2>
-        <p class="subtitle text-black dark:text-inherit">
-          {{latestDescription}}
-        </p>
+        <!-- <p class="subtitle text-black dark:text-inherit">
+          fdfdsfddfs
+        </p> -->
       </div>
     </div>
     <Projects/>
