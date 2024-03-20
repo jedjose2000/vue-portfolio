@@ -14,57 +14,57 @@ export default function usePortfolio(){
             {
                 "id": 1,
                 "name": "PHP",
-                "image": '/public/images/php.svg',
+                "image": '/images/php.svg',
             },
             {
                 "id": 2,
                 "name": "CodeIgniter",
-                "image": '/public/images/codeigniter.svg'
+                "image": '/images/codeigniter.svg'
             },
             {
                 "id": 3,
                 "name": "CSS",
-                "image": '/public/images/css.svg'
+                "image": '/images/css.svg'
             },
             {
                 "id": 4,
                 "name": "HTML",
-                "image": '/public/images/html.svg'
+                "image": '/images/html.svg'
             },
             {
                 "id": 5,
                 "name": "JavaScript",
-                "image": '/public/images/javascript.svg'
+                "image": '/images/javascript.svg'
             },
             {
                 "id": 6,
                 "name": "Laravel",
-                "image": '/public/images/laravel.svg'
+                "image": '/images/laravel.svg'
             },
             {
                 "id": 7,
                 "name": "MySQL",
-                "image": '/public/images/mysql.svg'
+                "image": '/images/mysql.svg'
             },
             {
                 "id": 8,
                 "name": "NodeJS",
-                "image": '/public/images/nodejs.svg'
+                "image": '/images/nodejs.svg'
             },
             {
                 "id": 9,
                 "name": "TailWind",
-                "image": '/public/images/tailwind.svg'
+                "image": '/images/tailwind.svg'
             },
             {
                 "id": 10,
                 "name": "Vue",
-                "image": '/public/images/vue.svg'
+                "image": '/images/vue.svg'
             },
             {
                 "id": 11,
                 "name": "MongoDB",
-                "image": '/public/images/mongodb.svg'
+                "image": '/images/mongodb.svg'
             },
             // Other skill objects...
         ];
