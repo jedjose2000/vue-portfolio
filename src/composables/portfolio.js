@@ -82,17 +82,17 @@ export default function usePortfolio(){
             {
                 "id": 4,
                 "name": "Portfolio Manager",
-                "image": "../public/images/portfolio.png",
+                "image": "/images/portfolio.png",
                 "link": "https://my-portfolio-2024.online/",
                 "gitHubUrl": "https://github.com/jedjose2000/MyPortfolio",
                 "projectDescription": "A Portfolio Manager I created which is hosted using AWS to fetch the skills and projects I had using an API.",
                 "projectImages": [
-                    '../public/images/laravel.svg',
-                    '../public/images/php.svg',
-                    '../public/images/mysql.svg',
-                    '../public/images/html.svg',
-                    '../public/images/tailwind.svg',
-                    '../public/images/javascript.svg',
+                    '/images/laravel.svg',
+                    '/images/php.svg',
+                    '/images/mysql.svg',
+                    '/images/html.svg',
+                    '/images/tailwind.svg',
+                    '/images/javascript.svg',
                 ],
                 "project_skills": [
                     {
@@ -136,15 +136,15 @@ export default function usePortfolio(){
                 {
                     "id": 3,
                     "name": "URL Shortener",
-                    "image": "../public/images/urlshortener.png",
+                    "image": "/images/urlshortener.png",
                     "link": "https://66dda136-c0cc-448f-9a08-a2564a4bdb50-00-155ak6cjlyghn.sisko.replit.dev/",
                     "gitHubUrl": "https://github.com/jedjose2000/url-shortener",
                     "projectDescription": "A URL Shortener Microservice project I made from the Back End Development and APis course by freeCodeCamp",
                     "projectImages": [
-                        '../public/images/nodejs.svg',
-                        '../public/images/mongodb.svg',
-                        '../public/images/javascript.svg',
-                        '../public/images/html.svg',
+                        '/images/nodejs.svg',
+                        '/images/mongodb.svg',
+                        '/images/javascript.svg',
+                        '/images/html.svg',
                     ],
                     "project_skills": [
                         {
@@ -176,16 +176,16 @@ export default function usePortfolio(){
                 {
                     "id": 2,
                     "name": "Web Based Sales and Inventory System of Raj Petshop",
-                    "image": "../public/images/rajpetshop.png",
+                    "image": "/images/rajpetshop.png",
                     "gitHubUrl": "https://github.com/jedjose2000/Project-Nocon",
                     "projectDescription": "A project where I worked on as both a Front-end and Back-end web developer. An inventory system for Raj Petshop which has the following modules: Dashboard, Category, Supplier, Products, Inventory, POS Teller, Reports.",
                     "projectImages": [
-                        '../public/images/codeigniter.svg',
-                        '../public/images/php.svg',
-                        '../public/images/mysql.svg',
-                        '../public/images/html.svg',
-                        '../public/images/css.svg',
-                        '../public/images/javascript.svg',
+                        '/images/codeigniter.svg',
+                        '/images/php.svg',
+                        '/images/mysql.svg',
+                        '/images/html.svg',
+                        '/images/css.svg',
+                        '/images/javascript.svg',
                     ],
                     "project_skills": [
                         {
@@ -229,17 +229,17 @@ export default function usePortfolio(){
                 {
                     "id": 1,
                     "name": "Bautista Hospital QR Code-Based Contact Tracing System",
-                    "image": "../public/images/bhospital.PNG",
+                    "image": "/images/bhospital.PNG",
                     "link": "https://bautistahospital.com/lander",
                     "gitHubUrl": "https://github.com/jedjose2000/BH.ContactTracingSystem",
                     "projectDescription": "A thesis project where I worked on as a backend developer utilizing PHP as the primary programming language. This project enabled the hospital to proactively track and monitor visitors and staff entering the premises and issue notifications in the event of potential contact with an infected or suspected COVID-19 individual.",
                     "projectImages": [
-                        '../public/images/codeigniter.svg',
-                        '../public/images/php.svg',
-                        '../public/images/mysql.svg',
-                        '../public/images/html.svg',
-                        '../public/images/css.svg',
-                        '../public/images/javascript.svg',
+                        '/images/codeigniter.svg',
+                        '/images/php.svg',
+                        '/images/mysql.svg',
+                        '/images/html.svg',
+                        '/images/css.svg',
+                        '/images/javascript.svg',
                     ],
                     "project_skills": [
                     {
@@ -285,17 +285,17 @@ export default function usePortfolio(){
             {
                 "id": 4,
                 "name": "Portfolio Manager",
-                "image": "../public/images/portfolio.png",
+                "image": "/images/portfolio.png",
                 "link": "https://my-portfolio-2024.online/",
                 "gitHubUrl": "https://github.com/jedjose2000/MyPortfolio",
                 "projectDescription": "A Portfolio Manager I created which is hosted using AWS to fetch the skills and projects I had using an API.",
                 "projectImages": [
-                    '../public/images/laravel.svg',
-                    '../public/images/php.svg',
-                    '../public/images/mysql.svg',
-                    '../public/images/html.svg',
-                    '../public/images/tailwind.svg',
-                    '../public/images/javascript.svg',
+                    '/images/laravel.svg',
+                    '/images/php.svg',
+                    '/images/mysql.svg',
+                    '/images/html.svg',
+                    '/images/tailwind.svg',
+                    '/images/javascript.svg',
                 ],
                 "project_skills": [
                     {
@@ -339,15 +339,15 @@ export default function usePortfolio(){
                 {
                     "id": 3,
                     "name": "URL Shortener",
-                    "image": "../public/images/urlshortener.png",
+                    "image": "/images/urlshortener.png",
                     "link": "https://66dda136-c0cc-448f-9a08-a2564a4bdb50-00-155ak6cjlyghn.sisko.replit.dev/",
                     "gitHubUrl": "https://github.com/jedjose2000/url-shortener",
                     "projectDescription": "A URL Shortener Microservice project I made from the Back End Development and APis course by freeCodeCamp",
                     "projectImages": [
-                        '../public/images/nodejs.svg',
-                        '../public/images/mongodb.svg',
-                        '../public/images/javascript.svg',
-                        '../public/images/html.svg',
+                        '/images/nodejs.svg',
+                        '/images/mongodb.svg',
+                        '/images/javascript.svg',
+                        '/images/html.svg',
                     ],
                     "project_skills": [
                         {
@@ -379,16 +379,16 @@ export default function usePortfolio(){
                 {
                     "id": 2,
                     "name": "Web Based Sales and Inventory System of Raj Petshop",
-                    "image": "../public/images/rajpetshop.png",
+                    "image": "/images/rajpetshop.png",
                     "gitHubUrl": "https://github.com/jedjose2000/Project-Nocon",
                     "projectDescription": "A project where I worked on as both a Front-end and Back-end web developer. An inventory system for Raj Petshop which has the following modules: Dashboard, Category, Supplier, Products, Inventory, POS Teller, Reports.",
                     "projectImages": [
-                        '../public/images/codeigniter.svg',
-                        '../public/images/php.svg',
-                        '../public/images/mysql.svg',
-                        '../public/images/html.svg',
-                        '../public/images/css.svg',
-                        '../public/images/javascript.svg',
+                        '/images/codeigniter.svg',
+                        '/images/php.svg',
+                        '/images/mysql.svg',
+                        '/images/html.svg',
+                        '/images/css.svg',
+                        '/images/javascript.svg',
                     ],
                     "project_skills": [
                         {
@@ -432,17 +432,17 @@ export default function usePortfolio(){
                 {
                     "id": 1,
                     "name": "Bautista Hospital QR Code-Based Contact Tracing System",
-                    "image": "../public/images/bhospital.PNG",
+                    "image": "/images/bhospital.PNG",
                     "link": "https://bautistahospital.com/lander",
                     "gitHubUrl": "https://github.com/jedjose2000/BH.ContactTracingSystem",
                     "projectDescription": "A thesis project where I worked on as a backend developer utilizing PHP as the primary programming language. This project enabled the hospital to proactively track and monitor visitors and staff entering the premises and issue notifications in the event of potential contact with an infected or suspected COVID-19 individual.",
                     "projectImages": [
-                        '../public/images/codeigniter.svg',
-                        '../public/images/php.svg',
-                        '../public/images/mysql.svg',
-                        '../public/images/html.svg',
-                        '../public/images/css.svg',
-                        '../public/images/javascript.svg',
+                        '/images/codeigniter.svg',
+                        '/images/php.svg',
+                        '/images/mysql.svg',
+                        '/images/html.svg',
+                        '/images/css.svg',
+                        '/images/javascript.svg',
                     ],
                     "project_skills": [
                     {
@@ -483,7 +483,9 @@ export default function usePortfolio(){
                     }
                     ]
                 },
-          ];
+            ];
+           
+                  
     };
 
     const filterProjects = (id) =>{
