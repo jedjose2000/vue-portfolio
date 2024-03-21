@@ -14,7 +14,7 @@
     <div class="mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40  ease-in duration-700 group-hover:scale-105">
       <img class="mx-auto lg:h-56 object-contain max-h-48 object-center  ease-in duration-700 group-hover:scale-75"
            :src="project.image"
-           alt="ui/ux review check"
+           :alt="project.name"
       />
       <div class="border-solid border-2 border-sky-400 rounded-xl bg-dark-primary ">
         <p class="text-white p-1 ml-2 group-hover:text-blue-400 cursor-default">{{project.name}}</p>
