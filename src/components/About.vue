@@ -31,8 +31,7 @@ onMounted(()=>{
             </p>
             <hr class="mb-8 opacity-90 dark:opacity-5"/>
             <p class="mb-8 indent-10 text-justify text-black dark:text-inherit">
-              I am passionate about building engaging, user-friendly websites that not only looks great but also function seamlessly. I am continuously improving my front-end and back-end development skills in order to develop innovative technological solutions. Moreover, I am also eager to learn manual and automation testing methodologies in order to take part in developing high-quality software products.
-              My hobbies are playing video games and learning programming languages and tools.
+              I am dedicated to ensuring the quality of software products by meticulously testing and optimizing their functionality to deliver engaging, bug-free, and user-friendly experiences. Moreover, I am also eager to learn manual and automation testing methodologies in order to take part in developing high-quality software products.
             </p>
             <p class="mb-8 indent-10 text-justify text-black dark:text-inherit">
               My goal is to build a rewarding career in software development where I can apply my skills, creativity, passion, and dedication to producing outstanding online experiences. I am looking forward to connecting with other industry experts in the field.
